@@ -355,7 +355,7 @@ h2{
     flex-direction: column;
     list-style: none;
     gap: 2rem;
-    width: 50%;
+    max-width: 50%;
 }
 
 p b{
@@ -481,7 +481,6 @@ footer img{
     gap: 2.66rem;
     text-align: center;
 }
-
 #footer-content-container div ul {
     list-style: none;
     display: flex;
@@ -492,6 +491,10 @@ footer img{
 .footer-inner-container{
     display: flex;
     gap: 2rem;
+}
+
+#footer-wallnuts{
+    width: 10%;
 }
 
 @media only screen and (max-width: 1330px) {
@@ -508,4 +511,27 @@ footer img{
         gap: 16px;
         color: var(--accent-color),
     }
+
+    #feedback-section{
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+
 }
+
+@media only screen and (max-width: 426px){
+    #hero-text{
+        width: 100vw;
+    }
+    #hero-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 90vw;
+    }
+}
+
