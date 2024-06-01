@@ -1,1 +1,511 @@
-// Продължи с твоя SCSS или обикновен CSS код тук.
+:root{
+    --back-color: #FDF8EC;
+    --accent-color: #9B582E;
+    --secondary-accent: #CA7111;
+    --white: #FFFFFF;
+    --dark-text: #533019;
+    --card-background: #FBEED0;
+    --text: #222222;
+    --p-text: #0f0d0d;
+    --pink: #F9E8DC;
+    --lighter-card-background: #FBF4DF;
+    --accent-card-background: #F9EECD;
+    --grey: #6E6E6E;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+html{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+
+body{
+    margin: 0;
+    max-width: 1440px;
+    background: var(--back-color);
+    margin-bottom: 60px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+#nav-links{
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    color: var(--accent-color),
+}
+
+#nav-links li{
+    font-family: 'Manrope';
+    font-weight: 600;
+}
+
+.action-button{
+    background: var(--accent-color);
+    border-radius: 32px;
+    color: var(--white);
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+    border: none;
+    font-family: "Manrope";
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+
+#hero-buttons-container{
+    display: flex;
+    gap: 2.66rem;
+    justify-content: stretch;
+}
+
+.secondary-button{
+    background: transparent;
+    color: var(--secondary-accent);
+    border-color: var(--secondary-accent);
+    border-radius: 32px;
+    border-width: 1px;
+    border: solid;
+    padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+    font-family: "Manrope";
+    font-size: 1.5rem;
+    font-weight: 600px;
+
+}
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 9.25rem;
+}
+
+#hero-text h1{
+    font-family: "Noto-Serif";
+    font-size: 6.66rem;
+    font-weight: 700;
+    line-height: 6.66rem;
+    margin: 9.25rem 1.25rem 4rem 1.25rem;
+    color: var(--dark-text);
+    text-align: center;
+    color: var(--text);
+}
+
+#hero-text h1 strong{
+    color: var(--accent-color);
+}
+
+#hero-text p{
+    text-align: center;
+    font-family: "Manrope";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.16rem;
+    width: 82%;
+    margin-bottom: 4rem;
+    color: var(--p-text);
+}
+
+#hero-cards{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25.1rem;
+    background: var(--card-background);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+    gap: 4rem;
+
+}
+
+hr{
+    border: 2px solid;
+    width: 50%;
+}
+
+#title-container{
+    position: relative;
+}
+
+#wallnuts{
+    position: absolute;
+    top: 5rem;
+    right: -13rem;
+    width: 50%;
+}
+
+#card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 19.5rem;
+    gap: 1.5rem;
+}
+
+#card img{
+    max-width: 100%;
+    height: auto;
+}
+
+form{
+    position: relative;
+
+}
+
+#media-section{
+    position: relative;
+}
+
+#page-leaves{
+    position: absolute;
+    top: -20rem;
+    left: -34rem;
+    width: 30%;
+    transform: rotate(45deg);
+}
+
+#form-leaves{
+    position: absolute;
+    top: -5rem;
+    right: 2.5rem;
+    width: 25%;
+}
+
+h3{
+    font-family: "Noto Serif";
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.375rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: "Manrope";
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    color: var(--p-text);
+    width: 100%;
+
+}
+
+a{
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+
+#about-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+    margin-top: 6.5rem;
+    margin-bottom: 7.83rem;
+}
+
+#about-text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 45%;
+    align-items: flex-start;
+    
+}
+
+h1{
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 6.66rem;
+}
+
+#desserts-section{
+    background: var(--lighter-card-background);
+    padding-bottom: 2.66rem;
+    padding-top: 3.5rem;
+    margin-bottom: 10rem;
+}
+
+#desserts-section-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.33rem;
+    border-radius: 32px;
+
+}
+
+
+#desserts-section-title-container h1{
+    margin: 0;
+}
+
+.horizontal-card{
+    display: flex;
+    align-items: center;
+    height: 41.5rem;
+    background: #FEFCF6;
+    border-radius: 1px;
+    justify-content: space-around;
+}
+
+.horizontal-card img{
+    width: 30.83rem;
+}
+
+.nutrient-scores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 60%;
+    border-radius: 24px;
+    padding-top: 4rem;
+    padding-left: 2.66rem;
+    padding-bottom: 4rem;
+    padding-right: 2.66rem;
+    background: var(--pink);
+}
+
+.left-scores, .right-scores{
+    display: flex;
+    flex-direction: column;
+    gap: 1.33rem;
+}
+
+h2{
+    font-family: "Noto Serif";
+    font-size: 4.66rem;
+    font-weight: 700;
+    line-height: 5.22rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-card-text-container{
+    width: 35%;
+}
+
+.detailed-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 3.33rem;
+    padding-right: 3.33rem;
+    list-style: none;
+
+}
+
+#desserts-section-footer{
+    display: flex;
+    background-color: var(--accent-card-background);
+    padding: 2.66rem;
+    margin: 3.33rem;
+    margin-bottom: 0;
+    align-items: center;
+    gap: 5.33rem;
+    justify-content: space-between;
+
+}
+
+#desserts-section-footer p{
+    font-size: 1.33rem;
+    display: flex;
+    background-color: var(--accent-card-background);
+    width: 75%;
+}
+
+#feedback-section{
+    display: flex;
+    gap: 18.5rem;
+    margin-bottom: 14.5rem;
+}
+
+#feedback-container{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 2rem;
+    width: 50%;
+}
+
+p b{
+    font-weight: 900;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.33rem;
+    background-color: var(--accent-card-background);
+    padding-top: 5.33rem;
+    padding-bottom: 5.33rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 1px;
+}
+
+input{
+    border: 1px solid #828282;
+    width: 68%;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+}
+
+textarea{
+    border: 1px solid #828282;
+    width: 90%;
+    border-radius: 8px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.33rem;
+    padding-right: 1.33rem;
+    font-family: "Manrope";
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.66rem;
+}
+
+form button{
+    width: 190px;
+    height: 40px;
+}
+
+#form-section{
+    padding-top: 7.16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12.91rem;
+    padding-bottom: 8.83rem;
+    background: var(--lighter-card-background);
+}
+
+#form-title{
+    text-align: center;
+    margin-bottom: 7.33rem;
+}
+
+#form-section h1{
+    margin: 0;
+    margin-bottom: 4rem;
+}
+
+#form-container{
+    display: flex;
+    gap: 20rem;
+}
+
+#company-details-container{
+    color: var(--grey);
+
+}
+
+span{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Manrope';
+
+}
+
+#media-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 21rem;
+}
+
+#media-section div{
+    width:58%;
+}
+
+#media-section-title-container{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 6.66rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    width: 20.83rem;
+}
+
+#footer-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.66rem;
+    text-align: center;
+}
+
+#footer-content-container div ul {
+    list-style: none;
+    display: flex;
+    gap: 2.33rem;
+    justify-content: center;
+}
+
+.footer-inner-container{
+    display: flex;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 1330px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+    }
+    
+    #nav-links{
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        color: var(--accent-color),
+    }
+}
